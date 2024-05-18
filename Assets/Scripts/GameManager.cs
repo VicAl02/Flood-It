@@ -115,8 +115,8 @@ public class GameManager : MonoBehaviour
 
         if (won)
         {
-            // TODO: Implement the win condition (show menu)
             Debug.Log("You won!");
+            movesText.GetComponent<Animator>().SetTrigger("GameWon");
         }
     }
 }
